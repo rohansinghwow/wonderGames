@@ -1,8 +1,19 @@
-import React from "react";
+import React , {useEffect} from "react";
+import { useDispatch } from "react-redux";
+import {loadGames} from './actions/getGames'
 
-export default () => (
-  <>
-    <h1>Welcome to React Vite Micro App!</h1>
-    <p>Hard to get more minimal than this React app.</p>
-  </>
-);
+
+export default function App(){
+  
+  const dispatch = useDispatch()
+  useEffect(()=>{
+    
+   dispatch(loadGames);
+  } , [])
+
+  return (
+    <div className="App">
+      <h1>Redux Games</h1>
+    </div>
+  )
+}

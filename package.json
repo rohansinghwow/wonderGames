@@ -8,6 +8,9 @@
     "build": "vite build"
   },
   "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
+    "envy": "^2.0.0",
     "framer-motion": "^6.2.8",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -19,6 +22,7 @@
   },
   "devDependencies": {
     "babel-preset-nano-react-app": "^0.1.0",
+    "redux-devtools-extension": "^2.13.9",
     "vite": "^2.6.7"
   },
   "babel": {
